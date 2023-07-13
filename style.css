@@ -80,15 +80,17 @@
 
    
 }
-
+.banner-btn{
+    display: flex;
+    gap: 20px;
+}
 .banner-button{
     background-color: transparent;
       outline: none;
       border: 1px  outset  white;
     color: white;
     padding: 10px 15px;
-     margin-right: 7rem;
-     margin-top: 20px;
+    
      cursor: pointer;
 
 }
@@ -157,10 +159,14 @@ label[for="checkbox"]{
 }
 
 .form-image{
-    width: 400px;
+    max-width: 400px;
    
     animation: image-rotate 40s infinite linear;
+ 
 
+}
+.form-image img{
+    width: 100%;
 }
 
 @keyframes image-rotate{
@@ -342,4 +348,55 @@ footer li{
     font-size: 25px;
     padding-bottom:20px ;
 
+}
+
+
+
+@media screen and (max-width:576px) {
+    .title{
+        font-size: 2.5em;
+        margin-bottom: 10px;
+       
+    }
+    .banner-container{
+        text-align: center;
+       
+    }
+
+    .banner-btn{
+        gap: 5px;
+    }
+    .form-container{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 20px;
+        /* background-color: purple; */
+        background-image: linear-gradient( -745deg,  rgb(14, 4, 19) 30% ,rgba(121, 17, 121, 0.924) 50%);
+        color: white;
+        height: 100vh;
+        margin-bottom: 14em;
+       
+      
+       
+    }
+
+    .banner-container{
+    
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-image: url("image/banner/t1.jpg"),linear-gradient(45deg,rgba(7, 7, 7, 0.641),rgba(255, 255, 255, 0.402));
+        background-size: cover;
+        background-position: right;
+        background-repeat: no-repeat;
+        background-blend-mode: darken;
+        color: white;
+        height: 100vh;
+    
+    }
+    
+
+    
 }
